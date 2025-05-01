@@ -3,14 +3,19 @@
 <head>
   <title>神秘王新</title>
   <style>
-    body {
-      background-image: url("https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-    }
-  </style>
+  .fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 类似 background-size: cover */
+    z-index: -1; /* 将图片置于内容下方 */
+  }
+</style>
 </head>
 <body>
+  <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" class="fixed-bg">
   <h1>Omg It's Wangxin😱😱😱</h1>
 </body>
 </html>
