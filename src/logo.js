@@ -25,14 +25,4 @@ window.onload = function () {
     div1.onmouseout = function () {
         timer = setInterval(move, 25);
     }
-    //点击一次跳转到另一个页面，点击两次广告消失
-    div1.onclick = function() {
-        if (a === 0) {
-            var neww = window.open('_blank');
-            neww.location = "https://tuo.hfc2307.top/";
-            a++;
-        } else {
-            this.style.display = "none";
-        }
-    }
 }
