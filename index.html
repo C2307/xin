@@ -6,19 +6,28 @@
     <title>王蛋大爆炸</title>
     <link rel="stylesheet" type="text/css" href="src/style.css">
     <link rel="stylesheet" type="text/css" href="src/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="<https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js>"></script>
+    <script>
+        NProgress.start(); // 开始进度条
+
+        window.onload = () => {
+            NProgress.done(); // 加载完成时结束进度条
+        };
+    </script>
     <script src="src/picjump.js"></script>
     <script src="src/logo.js"></script>
 </head>
     <body>
+
     <div class="container">
         <div class="bg-container">
-            <!-- 4个王蛋，每个延迟0.25秒 -->
             <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" alt="王蛋1" class="animated-bg" id="bg1">
             <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" alt="王蛋2" class="animated-bg" id="bg2">
             <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" alt="王蛋3" class="animated-bg" id="bg3">
             <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" alt="王蛋4" class="animated-bg" id="bg4">
         </div>
-        <!-- 王蛋容器 -->
         <div class="main-image-container">
             <img src="https://p.sda1.dev/23/27081b1d84ed045d76884494143a32a2/1000013835.jpg" alt="主王蛋" class="main-image">
         </div>
